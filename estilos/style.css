@@ -1,0 +1,180 @@
+/* ajustes previos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    color:rgb(59, 59, 59);
+
+}
+
+                                         /* INDEX */
+body {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+
+
+}
+
+
+/* inicio estilos header, se utiliza flexbox */
+header {
+    background-color:cadetblue;
+    margin-bottom:5px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-center {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+    h1{
+    color:rgb(59, 59, 59);
+    padding:40px;
+}
+
+
+.list {
+    padding-bottom:30px;
+    width:450px;
+    list-style-type: none;
+    display:flex;
+    justify-content:space-around;
+    text-decoration:none;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/* inicio estilos contenido */
+section {
+    background-color: gray;
+    margin: 5px 10px 5px 10px;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.section1-txt .section2-txt .section3-txt {
+    padding:50px;
+}
+
+/* inicio footer, al igual que en el header se utiliza flexbox */
+footer {
+    grid-area:footer;
+    background-color:cadetblue;
+    margin-top:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+
+
+.map {
+    margin: 10px;
+}
+
+.adress-data {
+        margin: 10px;
+        align-self:flex-end;
+            
+}
+
+/* estilos formulario contacto */
+
+form {
+    background-color: darkgray;
+    padding: 100px;
+    align-self:center;
+
+}
+
+/* estilos galería fotos sección productos */
+
+.product-gallery {
+    background-color: gray;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "photo1 photo2 photo3"
+    "photo4 photo5 photo6"
+    "photo7 photo8 photo9"
+    ;
+    
+}
+
+.productphoto1 {
+    grid-area: photo1;
+    width:max-content;
+    margin: 10px;
+    
+}
+
+.productphoto2 {
+    grid-area: photo2;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto3 {
+    grid-area: photo3;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto4 {
+    grid-area: photo4;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto5 {
+    grid-area: photo5;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto6 {
+    grid-area: photo6;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto7 {
+    grid-area: photo7;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto8 {
+    grid-area: photo8;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
+
+.productphoto9 {
+    grid-area: photo9;
+    width:fit-content;
+    height: fit-content;
+    margin: 10px;
+}
