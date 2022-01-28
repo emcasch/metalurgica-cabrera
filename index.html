@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link estilos css -->
     <link rel="stylesheet" href="./estilos/style.css" />
+    <!-- link favicon -->
     <link rel="shortcut icon" href="imagenes/logo.png">
+    <!-- link animatios AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cabrera Servicios</title>
 </head>
 
@@ -45,7 +49,9 @@
     </header>
 
     <main class="index-main">
+        <div data-aos="fade-right">
         <section class="section section1">
+
             <div class="section1-img">
                 <img src="./imagenes/industria-metalurgicajpg.jpg" alt="weldingGuy" width="500" height="250" />
             </div>
@@ -57,9 +63,13 @@
                     quae?
                 </p>
             </div>
-        </section>
 
+        </section>
+    </div>
+
+    <div data-aos="fade-left">
         <section class="section section2">
+
             <div class="section2-img">
                 <img src="./imagenes/laser.jpg" alt="laserCutting" width="500" height="250" />
             </div>
@@ -70,8 +80,15 @@
                     molestiae
                     culpa ipsam nisi?</p>
             </div>
+
         </section>
+
+    </div>
+
+    <div data-aos="fade-right">
         <section class="section section3">
+
+
             <div class="section3-img">
                 <img src="./imagenes/mecanizado.jpg" alt="lathe" width="500" height="250" />
             </div>
@@ -83,7 +100,9 @@
                     culpa.
                     Aspernatur.</p>
             </div>
+
         </section>
+    </div>
     </main>
 
     <footer>
@@ -98,6 +117,11 @@
             Entre Ríos, Argentina <br>
             Tel: 3442 467039
         </aside>
+        <!-- link js animations AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </footer>
 </body>
 

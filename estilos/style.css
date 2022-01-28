@@ -53,6 +53,10 @@ header {
 nav ul li a {
     text-decoration: none;
     cursor:pointer;
+    padding: 20px;
+}
+nav ul li:hover {
+    background-color: white;
 }
 
 /* inicio estilos contenido */
