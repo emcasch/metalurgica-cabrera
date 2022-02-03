@@ -1,184 +1,117 @@
-/* ajustes previos */
+/* ajustes previos generales */
 * {
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
-    color:rgb(59, 59, 59);
+    box-sizing: border-box;
+    color: rgb(59, 59, 59);
+    font-family: sans-serif;
 
 }
 
-                                         /* INDEX */
-body {
-    display:flex;
-    flex-direction: column;
-    height: 100%;
-
+img {
+    max-width: 100%;
+    padding: 1rem;
 
 }
 
-
-/* inicio estilos header, se utiliza flexbox */
+/* INDEX + HEADERS Y FOOTERS */
 header {
-    background-color:cadetblue;
-    margin-bottom:5px;
-    display:flex;
-    justify-content: space-around;
+    background-color: cadetblue;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.header-center {
-    display:flex;
+.navbar {
+    margin: 1.5rem;
+}
+
+main {
+    margin: 1rem;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    background-color: rgb(179, 179, 179);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.txt {
+    margin: 0rem 1rem 0.3rem 1rem;
+}
+
+/* estilos footer */
+
+footer {
+    background-color: cadetblue;
+    height: fit-content;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-    h1{
-    color:rgb(59, 59, 59);
-    padding:40px;
-}
-
-
-.list {
-    padding-bottom:30px;
-    width:450px;
-    list-style-type: none;
-    display:flex;
-    justify-content:space-around;
-    text-decoration:none;
-    
-}
-
-nav ul li a {
-    text-decoration: none;
-    cursor:pointer;
-    padding: 20px;
-}
-nav ul li:hover {
-    background-color: white;
-}
-
-/* inicio estilos contenido */
-section {
-    background-color: gray;
-    margin: 5px 10px 5px 10px;
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
-
-}
-
-.section1-txt .section2-txt .section3-txt {
-    padding:50px;
-}
-
-/* inicio footer, al igual que en el header se utiliza flexbox */
-footer {
-    grid-area:footer;
-    background-color:cadetblue;
-    margin-top:5px;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    
-}
-
-
-
 .map {
-    margin: 10px;
+    margin: 1rem;
 }
 
-.adress-data {
-        margin: 10px;
-        align-self:flex-end;
-            
+.logo-footer {
+    display: none;
 }
 
-/* estilos formulario contacto */
+aside {
+    margin: 1rem;
+    align-self: flex-end;
+}
 
+/* contacto */
 form {
-    background-color: darkgray;
-    padding: 50px 100px 50px 100px;
-    align-self:center;
+    background-color: rgb(179, 179, 179);
+    padding: 1rem;
 }
 
+/* mediaquery */
 
-/* estilos galería fotos sección productos */
+@media screen and (min-width:900px) {
+    section {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
 
-.product-gallery {
-    background-color: gray;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "photo1 photo2 photo3"
-    "photo4 photo5 photo6"
-    "photo7 photo8 photo9"
-    ;
-    
-}
+    .section img {
+        width: 45vw;
+        height: 35vh;
+    }
 
-.productphoto1 {
-    grid-area: photo1;
-    width:max-content;
-    margin: 10px;
-    
-}
+    .section1 .txt, .section3 .txt {
+        grid-column-start: 2;
+    }
 
-.productphoto2 {
-    grid-area: photo2;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
+    .section2 .txt{
+        grid-column-start: 1;
+        grid-row-start:1;
+    }
 
-.productphoto3 {
-    grid-area: photo3;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
+    .section2-img {
+        grid-column-start: 2;
+        grid-row-start:1;
+    }
 
-.productphoto4 {
-    grid-area: photo4;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
+    .logo{
+        width:12vw;
+    }
 
-.productphoto5 {
-    grid-area: photo5;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
-
-.productphoto6 {
-    grid-area: photo6;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
-
-.productphoto7 {
-    grid-area: photo7;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
-
-.productphoto8 {
-    grid-area: photo8;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
-}
-
-.productphoto9 {
-    grid-area: photo9;
-    width:fit-content;
-    height: fit-content;
-    margin: 10px;
+    .logo-footer {
+        display: block;
+        align-self:center;
+    }
 }
