@@ -1,0 +1,53 @@
+/* INDEX + HEADERS Y FOOTERS */
+header {
+    background-color: $colorHeader;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navbar {
+        margin: 1.5rem;
+    }
+
+}
+
+main {
+    margin: 1rem;
+    display: flex;
+    grid-row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+
+    section {
+        background-color: $colorFondos;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    p {
+        margin: 0rem 1rem 0.3rem 1rem;
+    }
+}
+
+/* estilos footer */
+
+footer {
+    background-color: $colorHeader;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    iframe {
+        margin: 1rem;
+        width: 25vw;
+        height: 25vh;
+    }
+
+    aside {
+        margin: 1rem;
+        align-self: flex-end;
+    }
+}

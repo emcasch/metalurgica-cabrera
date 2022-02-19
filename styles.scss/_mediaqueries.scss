@@ -1,0 +1,26 @@
+/* mediaquery */
+
+@media screen and (min-width:$desktop) {
+    
+    .section2 {
+        flex-direction: row-reverse;
+    }
+    section {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+     img {
+        width: 40vw;
+        height: 52vh;
+     }
+
+     p {
+        max-width:45vw;
+     }
+
+     
+    }
+}
