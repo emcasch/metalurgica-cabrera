@@ -1,0 +1,55 @@
+.main-servicios {
+    margin: 1rem;
+    display: flex;
+    grid-row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+
+    section {
+        background-color: $colorFondos;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            padding: 1rem;
+        }
+
+        p {
+            margin: 0rem 1rem 0.3rem 1rem;
+        }
+
+    }
+
+}
+
+/* mediaquery para tablets y desktop*/
+
+@media screen and (min-width:$tablet) {
+
+    .main-servicios {
+        .section2 {
+            flex-direction: row-reverse;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+
+            img {
+                width: 40vw;
+                height: 50vh;
+            }
+
+            p {
+                max-width: 45vw;
+            }
+
+        }
+
+    }
+
+}
